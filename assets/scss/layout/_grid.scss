@@ -1,0 +1,250 @@
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.flex-row > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-arround {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.row .col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+.d-inline {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+
+.mv-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mr-a {
+  margin-right: auto;
+}
+
+.ml-a {
+  margin-left: auto;
+}
+
+@for $i from 0 through 20 {
+  .p-#{$i} {
+    padding: ($i * $spacing * 1px);
+  }
+  .pt-#{$i} {
+    padding-top: ($i * $spacing * 1px);
+  }
+  .pb-#{$i} {
+    padding-bottom: ($i * $spacing * 1px);
+  }
+  .pr-#{$i} {
+    padding-right: ($i * $spacing * 1px);
+  }
+  .pl-#{$i} {
+    padding-left: ($i * $spacing * 1px);
+  }
+  .ph-#{$i} {
+    padding-left: ($i * $spacing * 1px);
+    padding-right: ($i * $spacing * 1px);
+  }
+  .pv-#{$i} {
+    padding-top: ($i * $spacing * 1px);
+    padding-bottom: ($i * $spacing * 1px);
+  }
+
+  .m-#{$i} {
+    margin: ($i * $spacing * 1px);
+  }
+  .mt-#{$i} {
+    margin-top: ($i * $spacing * 1px);
+  }
+  .mb-#{$i} {
+    margin-bottom: ($i * $spacing * 1px);
+  }
+  .mr-#{$i} {
+    margin-right: ($i * $spacing * 1px);
+  }
+  .ml-#{$i} {
+    margin-left: ($i * $spacing * 1px);
+  }
+  .mh-#{$i} {
+    margin-left: ($i * $spacing * 1px);
+    margin-right: ($i * $spacing * 1px);
+  }
+  .mv-#{$i} {
+    margin-top: ($i * $spacing * 1px);
+    margin-bottom: ($i * $spacing * 1px);
+  }
+}
+
+@each $bp in $breakpoints {
+  $breakpoint: nth($bp, 1);
+  @include breakpoint($breakpoint) {
+    .d-#{$breakpoint}-none {
+      display: none;
+    }
+    .d-#{$breakpoint}-block {
+      display: block;
+    }
+    .d-#{$breakpoint}-inline {
+      display: inline-block;
+    }
+    .d-#{$breakpoint}-flex {
+      display: flex;
+    }
+    @for $i from 1 through $cols {
+      .col-#{$breakpoint}-#{$i} {
+        $value: getColumn($cols, $i);
+        @include useColumn($value);
+      }
+    }
+
+    .mv-#{$breakpoint}-a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mr-#{$breakpoint}-a {
+      margin-right: auto;
+    }
+
+    .ml-#{$breakpoint}-a {
+      margin-left: auto;
+    }
+    @for $i from 0 through 20 {
+      .p-#{$breakpoint}-#{$i} {
+        padding: ($i * $spacing * 1px);
+      }
+      .pt-#{$breakpoint}-#{$i} {
+        padding-top: ($i * $spacing * 1px);
+      }
+      .pb-#{$breakpoint}-#{$i} {
+        padding-bottom: ($i * $spacing * 1px);
+      }
+      .pr-#{$breakpoint}-#{$i} {
+        padding-right: ($i * $spacing * 1px);
+      }
+      .pl-#{$breakpoint}-#{$i} {
+        padding-left: ($i * $spacing * 1px);
+      }
+      .ph-#{$breakpoint}-#{$i} {
+        padding-left: ($i * $spacing * 1px);
+        padding-right: ($i * $spacing * 1px);
+      }
+      .pv-#{$breakpoint}-#{$i} {
+        padding-top: ($i * $spacing * 1px);
+        padding-bottom: ($i * $spacing * 1px);
+      }
+
+      .m-#{$breakpoint}-#{$i} {
+        margin: ($i * $spacing * 1px);
+      }
+      .mt-#{$breakpoint}-#{$i} {
+        margin-top: ($i * $spacing * 1px);
+      }
+      .mb-#{$breakpoint}-#{$i} {
+        margin-bottom: ($i * $spacing * 1px);
+      }
+      .mr-#{$breakpoint}-#{$i} {
+        margin-right: ($i * $spacing * 1px);
+      }
+      .ml-#{$breakpoint}-#{$i} {
+        margin-left: ($i * $spacing * 1px);
+      }
+      .mh-#{$breakpoint}-#{$i} {
+        margin-left: ($i * $spacing * 1px);
+        margin-right: ($i * $spacing * 1px);
+      }
+      .mv-#{$breakpoint}-#{$i} {
+        margin-top: ($i * $spacing * 1px);
+        margin-bottom: ($i * $spacing * 1px);
+      }
+    }
+  }
+}

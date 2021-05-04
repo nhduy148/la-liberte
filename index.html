@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Liberte | Trang chủ</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  </head>
+
+  <body id="page-home">
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <h1>
+              <a href="/">
+                <img src="assets/images/common/logo.png" alt="La Liberte" />
+              </a>
+            </h1>
+          </div>
+          <div class="d-md-none">
+            <div id="toggle">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+            </div>
+          </div>
+          <nav id="navbar" class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__content">Du thuyền</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/tour.html" class="navbar__content">Tour</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__content">Media</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/about.html" class="navbar__content">Về La Liberte</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/contact.html" class="navbar__content">Liên hệ</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="btn btn--primary">Thuê du thuyền</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="main-visual" id="main-visual">
+        <div class="container">
+          <div class="main-visual__inner">
+            <h1 class="typography-hero">
+              Kỳ nghỉ hoàn hảo
+              <br />
+              với Du thuyền 5 sao
+            </h1>
+            <p class="typography-subh1">
+              Sở hữu một kỳ nghỉ hoàn hảo và đẳng cấp 5 sao với
+              <br />
+              Dịch vụ du thuyền LA LIBERLE khắp nơi trên thế giới
+            </p>
+            <div class="main-visual__form">
+              <form id="filter-form" class="filter-form">
+                <div class="dropdown dropdown--nofocus">
+                  <input type="hidden" name="a1" />
+                  <div class="dropdown__content">
+                    <p class="dropdown__label">Địa điểm</p>
+                    <p class="dropdown__sublabel">Bạn muốn đi đâu?</p>
+                  </div>
+                  <div class="dropdown__icon">
+                    <span class="ic ic-arrow-down ic-arrow-down--white"></span>
+                  </div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">Địa điểm 01</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">Địa điểm 02</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">Địa điểm 03</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">Địa điểm 04</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">Địa điểm 05</span>
+                    </li>
+                  </ul>
+                </div>
+                <span class="divider d-none d-sm-block"></span>
+                <div class="dropdown dropdown--nofocus">
+                  <input type="hidden" name="a2" />
+                  <div class="dropdown__content">
+                    <p class="dropdown__label">Số người</p>
+                    <p class="dropdown__sublabel">Chọn</p>
+                  </div>
+                  <div class="dropdown__icon">
+                    <span class="ic ic-arrow-down ic-arrow-down--white"></span>
+                  </div>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">1 người</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">2 người</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">3 người</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">4 người</span>
+                    </li>
+                    <li class="dropdown__item">
+                      <span class="dropdown__item-text">5 người</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-none d-sm-block">
+                  <button type="submit" class="btn btn--icon">
+                    <span class="ic ic-search"></span>
+                  </button>
+                </div>
+                <div class="btn-wrapper d-sm-none">
+                  <button type="submit" class="btn btn--primary fullwidth">
+                    <span class="ic ic-search ic-search--dark"></span>
+                    Tìm kiếm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customer-says">
+        <div class="container">
+          <div class="customer-says__head">
+            <h3 class="typography">Truyền thông nói gì về chúng tôi</h3>
+          </div>
+          <div id="custom-says">
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-01.png" alt="" />
+            </div>
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-04.png" alt="" />
+            </div>
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-03.png" alt="" />
+            </div>
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-02.png" alt="" />
+            </div>
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-03.png" alt="" />
+            </div>
+            <div class="customer-says__item">
+              <img src="/assets/images/home/customer-says-04.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="d-md-none">
+        <div class="container">
+          <div class="divider"></div>
+        </div>
+      </div>
+      <section class="why-choice-us">
+        <div class="container">
+          <div class="why-choice-us__header">
+            <div class="why-choice-us__hero">
+              <img
+                src="/assets/images/home/perfect-yacht-la-liberte.png"
+                alt="Perfect Yacht La Liberte"
+              />
+            </div>
+            <h2 class="typography-h2">Tại sao chọn Du Thuyền La Liberte?</h2>
+            <p class="typography-subh1">
+              Hãy để La Liberte giúp bạn có một kỳ nghỉ hoàn hảo và đẳng cấp bậc
+              nhất
+              <br class="d-none d-md-block" />
+              tại Việt Nam. Chúng tôi tự hào có tất cả gì bạn cần
+            </p>
+          </div>
+          <div class="why-choice-us__list">
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/bag.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">
+                Kinh nghiệm
+              </h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/presentation.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">
+                Chất lượng cao
+              </h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/ceo.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">
+                Chuyên nghiệp
+              </h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/report.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">
+                An toàn về bảo hộ
+              </h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/dinner.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">
+                Ẩm thực phong phú
+              </h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+            <div class="why-choice-us__item">
+              <div class="why-choice-us__item-icon">
+                <img src="/assets/images/icons/wallet.png" />
+              </div>
+              <h3 class="why-choice-us__item-label typography-h3">Giá tốt</h3>
+              <p class="why-choice-us__item-text typography-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="d-md-none">
+        <div class="container">
+          <div class="divider"></div>
+        </div>
+      </div>
+      <section class="featured-yacht">
+        <div class="container">
+          <div class="featured-yacht__header">
+            <h2 class="typography-hero">Du thuyền nổi bật</h2>
+            <div class="d-none d-md-block">
+              <a href="#" class="btn btn--link">
+                Xem tất cả
+                <span class="bag">(160)</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex-row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img src="/assets/images/home/yacht-01.png" alt="NC14" />
+                  </div>
+                  <h4 class="product__name typography-h3">NC14</h4>
+                  <p class="product__pricing">00004$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-xs-12 col-sm-6 col-md-4">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img src="/assets/images/home/yacht-02.png" alt="NC14" />
+                  </div>
+                  <h4 class="product__name typography-h3">NC14</h4>
+                  <p class="product__pricing">00004$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img src="/assets/images/home/yacht-03.png" alt="NC14" />
+                  </div>
+                  <h4 class="product__name typography-h3">NC14</h4>
+                  <p class="product__pricing">00004$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img src="/assets/images/home/yacht-04.png" alt="NC14" />
+                  </div>
+                  <h4 class="product__name typography-h3">NC14</h4>
+                  <p class="product__pricing">00004$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img src="/assets/images/home/yacht-05.png" alt="NC14" />
+                  </div>
+                  <h4 class="product__name typography-h3">NC14</h4>
+                  <p class="product__pricing">00004$/ ngày</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="d-flex d-md-none justify-center align-center mt-15">
+            <a href="#" class="btn btn--link">
+              Xem tất cả
+              <span class="bag">(160)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="our-customer">
+        <div class="container">
+          <h2 class="typography-h1">Khách hàng của chúng tôi</h2>
+          <div id="our-customer">
+            <div class="our-customer__item">
+              <img
+                src="/assets/images/home/our-customer-01.png"
+                alt="Habazaa Event"
+              />
+              <div class="our-customer__item-inner">
+                <h2 class="our-customer__item-name typography-h3">
+                  Habazaa Event
+                </h2>
+                <p class="our-customer__item-date">04/12/2021</p>
+              </div>
+            </div>
+            <div class="our-customer__item">
+              <img
+                src="/assets/images/home/our-customer-02.png"
+                alt="Habazaa Event"
+              />
+              <div class="our-customer__item-inner">
+                <h2 class="our-customer__item-name typography-h3">
+                  Habazaa Event
+                </h2>
+                <p class="our-customer__item-date">04/12/2021</p>
+              </div>
+            </div>
+            <div class="our-customer__item">
+              <img
+                src="/assets/images/home/our-customer-03.png"
+                alt="Pepsi Event"
+              />
+              <div class="our-customer__item-inner">
+                <h2 class="our-customer__item-name typography-h3">
+                  Pepsi Event
+                </h2>
+                <p class="our-customer__item-date">04/12/2021</p>
+              </div>
+            </div>
+            <div class="our-customer__item">
+              <img
+                src="/assets/images/home/our-customer-04.png"
+                alt="Pepsi Event"
+              />
+              <div class="our-customer__item-inner">
+                <h2 class="our-customer__item-name typography-h3">
+                  Pepsi Event
+                </h2>
+                <p class="our-customer__item-date">04/12/2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advisory">
+        <div class="container">
+          <div class="advisory__inner">
+            <h2 class="typography-h1">Tư vấn ngay</h2>
+            <p class="typography-subhero">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor.
+            </p>
+            <form action="#" class="advisory__form">
+              <input
+                name="email"
+                type="email"
+                required
+                placeholder="Nhập email"
+              />
+              <button type="submit" class="btn btn--primary">Gửi</button>
+            </form>
+            <p class="typography-caption">
+              Gửi yêu cầu tư vấn chi tiết
+              <a href="#">tại đây</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="mark">
+          <img src="/assets/images/icons/goole-map-mark.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="flex-row">
+            <div class="col-xs-12 col-md-6">
+              <h2 class="typography-hero">Contact us</h2>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <span class="ic ic-place ic-place--primary"></span>
+                  <a href="#" class="typography-body">
+                    123 Nguyen Van Troi, Distric A, HCM city
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <span class="ic ic-letter ic-letter--primary"></span>
+                  <a href="#" class="typography-body">hello@abc.net.vn</a>
+                </li>
+                <li class="contact__item">
+                  <span class="ic ic-phone ic-phone--primary"></span>
+                  <a href="#" class="typography-body">Hỗ trợ dịch vụ</a>
+                </li>
+              </ul>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/facebook.png" alt="" />
+                    <img
+                      src="/assets/images/icons/facebook-active.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/instagram.png" alt="" />
+                    <img
+                      src="/assets/images/icons/instagram-active.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/twitter.png" alt="" />
+                    <img src="/assets/images/icons/twitter-active.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 d-md-flex d-block flex-column justify-end align-end"
+            >
+              <a href="#" class="contact__button">
+                <span class="contact__button-icon">
+                  <img src="/assets/images/icons/direction.png" alt="" />
+                </span>
+                Chỉ đường với Google map
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="flex-row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/images/common/logo.png" alt="" />
+                </a>
+              </div>
+
+              <div class="typography-caption">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries,
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-4">
+              <h4 class="footer__top-title typography-h4">Về chúng tôi</h4>
+              <div class="flex-row">
+                <div class="col-xs-6">
+                  <ul class="sitemap">
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Hồ sơ năng lực</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Du Thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Du Thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="sitemap">
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tour trong nước</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tour ngoài nước</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Thuê du thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tổ chức sự kiện</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
+              <h4 class="footer__top-title typography-h4">
+                Đăng ký nhận ưu đãi
+              </h4>
+              <form class="subscribe">
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Nhập email"
+                />
+                <button type="submit" class="btn btn--primary">
+                  <img src="/assets/images/icons/send.png" />
+                </button>
+              </form>
+              <p class="typography-caption">
+                Ưu đãi thường xuyên diễn ra mỗi tháng
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <p class="typography-caption">
+            Copyright
+            <span class="special-character">©</span>
+            2020
+            <a href="/" class="brand">La Liberte</a>
+            . All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('#custom-says').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        variableWidth: true,
+      });
+      $('#our-customer').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        variableWidth: true,
+        dots: true,
+        customPaging: function (slider, i) {
+          return '<span class="custom-dot"></span>';
+        },
+      });
+    </script>
+    <script src="/assets/js/script.min.js"></script>
+  </body>
+</html>

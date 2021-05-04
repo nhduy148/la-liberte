@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Liberte | Tour Detail</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.min.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  </head>
+
+  <body id="page-tour-detail">
+    <header class="header header--sticky-default" id="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <h1>
+              <a href="/">
+                <img src="assets/images/common/logo.png" alt="La Liberte" />
+              </a>
+            </h1>
+          </div>
+          <div class="d-md-none">
+            <div id="toggle">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+            </div>
+          </div>
+          <nav id="navbar" class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__content">Du thuyền</a>
+              </li>
+              <li class="navbar__item active">
+                <a href="/tour.html" class="navbar__content">Tour</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__content">Media</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/about.html" class="navbar__content">Về La Liberte</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/contact.html" class="navbar__content">Liên hệ</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="btn btn--primary">Thuê du thuyền</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="breadcrumb breadcrumb--bg-dark">
+        <div class="container">
+          <div class="breadcrumb__inner">
+            <div class="breadcrumb__item">
+              <a href="/">Trang chủ</a>
+            </div>
+            <div class="breadcrumb__item">
+              <a href="/tour.html">Tour</a>
+            </div>
+            <div class="breadcrumb__item">
+              <span>Hạ Long Bay</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="content__head mb-6 mb-md-10">
+            <div class="d-flex justify-between align-center">
+              <h2 class="typography-hero mb-5">Hạ Long Bay</h2>
+              <div class="d-md-none">
+                <button class="btn btn--primary" id="book-tour-button">
+                  Đặt Tour
+                </button>
+              </div>
+            </div>
+            <div class="d-flex align-center mb-5">
+              <span class="ic ic-place ic-place--gray mr-2"></span>
+              <p class="content__placement">Hạ Long, Việt Nam</p>
+            </div>
+            <p class="typography-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Posuere morbi leo urna molestie at elementum eu.
+            </p>
+          </div>
+          <div class="gallery mb-md-13 mb-8">
+            <div class="flex-row">
+              <div class="col-md-6 col-xs-12">
+                <div class="gallery__item gallery__item--main">
+                  <img src="/assets/images/tour-detail/gallery-01.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <div class="flex-row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="gallery__item">
+                      <img
+                        src="assets/images/tour-detail/gallery-02.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="gallery__item">
+                      <img
+                        src="assets/images/tour-detail/gallery-03.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="gallery__item">
+                      <img
+                        src="assets/images/tour-detail/gallery-04.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="gallery__item">
+                      <img
+                        src="assets/images/tour-detail/gallery-05.png"
+                        alt=""
+                      />
+                      <div class="gallery__remaining">
+                        <span class="gallery__remaining-tag">9+</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__body">
+            <div class="flex-row">
+              <div class="col-md-7 col-xs-12">
+                <div class="category">
+                  <h3 class="typography-h1 md-3">Các hạng mục có trong tour</h3>
+                  <p class="typography-subh1 text-gray">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor.
+                  </p>
+
+                  <ul class="mt-md-10 mt-6">
+                    <li class="category__item mb-md-8 mb-5">
+                      <div class="category__item-icon">
+                        <img
+                          src="/assets/images/tour-detail/cate-icon-01.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="category__item-content">
+                        <h5 class="typography-h3 mb-2">Thuyền 5 sao</h5>
+                        <p class="typography-body text-gray">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit. Aenean commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="category__item mb-md-8 mb-5">
+                      <div class="category__item-icon">
+                        <img
+                          src="/assets/images/tour-detail/cate-icon-02.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="category__item-content">
+                        <h5 class="typography-h3 mb-2">
+                          Ẩm thực Châu Âu, Hàn Quốc
+                        </h5>
+                        <p class="typography-body text-gray">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit. Aenean commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="category__item">
+                      <div class="category__item-icon">
+                        <img
+                          src="/assets/images/tour-detail/cate-icon-03.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="category__item-content">
+                        <h5 class="typography-h3 mb-2">Biểu diễn âm nhạc</h5>
+                        <p class="typography-body text-gray">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing
+                          elit. Aenean commodo ligula eget dolor.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="divider mv-6 mv-md-10"></div>
+                <div class="experience">
+                  <h3 class="typography-h1 mb-md-13 mb-8">
+                    Trải nghiệm trong tour
+                  </h3>
+                  <p class="typography-body">
+                    Thuyền sẽ xuôi dòng Sông Sài Gòn đi qua các địa danh như:
+                    Bến Cảng Nhà Rồng (nơi Bác Hồ ra đi tìm đường cứu Nước), Bến
+                    Bạch Đằng (Bến Ngự), Cảng Ba Son (một trong những địa điểm
+                    có lịch sử lâu đời ghi dấu truyền thống đấu tranh cách mạng
+                    vẻ vang của dân tộc Việt Nam), Tòa Nhà Landmark 81 tầng –
+                    đây là tòa nhà cao nhất Việt Nam tại thời điểm hiện tại.
+                    <br />
+                    <br />
+                    Du khách sẽ hòa mình cùng thiên nhiên sông nước trên những
+                    đoạn đường sông đẹp nhất tại Thành phố Hồ Chí Minh hiện nay,
+                    cảm nhận cảm giác “Trên Bến Dưới Thuyền” giữa lòng thành
+                    phố, trung tâm kinh tế của cả nước.
+                  </p>
+                </div>
+                <div class="divider mv-6 mv-md-10"></div>
+                <div class="route">
+                  <div class="mb-6 mb-md-10">
+                    <h3 class="typography-h1">Lộ trình tour</h3>
+                  </div>
+                  <div class="d-flex align-center justify-start mb-3 mb-md-5">
+                    <p class="date mr-md-5 mr-2">Ngày 1</p>
+                    <h6 class="typography-h4">Khởi hành tour</h6>
+                  </div>
+                  <div class="d-flex mb-3 mb-md-5">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                  <div class="d-flex mb-3 mb-md-5">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                  <div class="image mb-3 mb-md-5">
+                    <img src="assets/images/tour-detail/route-01.png" alt="" />
+                  </div>
+                  <div class="d-flex align-center justify-start mb-3 mb-md-5">
+                    <p class="date mr-md-5 mr-2">Ngày 2</p>
+                    <h6 class="typography-h4">Phuket city</h6>
+                  </div>
+                  <div class="image mb-3 mb-md-5">
+                    <img src="assets/images/tour-detail/route-02.png" alt="" />
+                  </div>
+                  <div class="d-flex mb-3 mb-md-5">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                  <div class="d-flex mb-3 mb-md-5">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                  <div class="d-flex mb-3 mb-md-5">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                  <div class="d-flex">
+                    <span class="dot"></span>
+                    <p class="typography-body">
+                      neque vitae tempus quam pellentesque nec nam aliquam sem
+                      et tortor consequat id porta nibh venenatis cras sed felis
+                      eget velit aliquet sagittis id
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-xs-12">
+                <div class="d-none d-md-block pl-5" id="book-tour-form">
+                  <form class="book-tour">
+                    <div class="d-flex justify-between align-center mb-3">
+                      <h3 class="typography-h2 text-dark">Đặt tour</h3>
+                      <h4 class="typography-h4 text-dark">00$/ người</h4>
+                    </div>
+                    <div class="mb-3 mb-md-7">
+                      <p class="typography-body text-gray">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Posuere morbi leo urna molestie at
+                        elementum eu.
+                      </p>
+                    </div>
+                    <div class="mb-3 mb-md-7">
+                      <div class="dropdown-group d-flex align-center">
+                        <div class="dropdown">
+                          <input type="hidden" name="a1" />
+                          <div class="dropdown__content">
+                            <p class="dropdown__label">Thời gian</p>
+                            <p class="dropdown__sublabel">Chọn</p>
+                          </div>
+                          <div class="dropdown__icon">
+                            <span
+                              class="ic ic-arrow-down ic-arrow-down--white"
+                            ></span>
+                          </div>
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">01:00 h</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">02:00 h</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">03:00 h</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">04:00 h</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">05:00 h</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <span class="divider divider--vertical"></span>
+                        <div class="dropdown">
+                          <input type="hidden" name="a2" />
+                          <div class="dropdown__content">
+                            <p class="dropdown__label">Số người</p>
+                            <p class="dropdown__sublabel">Chọn</p>
+                          </div>
+                          <div class="dropdown__icon">
+                            <span
+                              class="ic ic-arrow-down ic-arrow-down--white"
+                            ></span>
+                          </div>
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">1 người</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">2 người</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">3 người</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">4 người</span>
+                            </li>
+                            <li class="dropdown__item">
+                              <span class="dropdown__item-text">5 người</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field field--fullwidth mb-2 mb-md-5">
+                      <input
+                        class="field__input"
+                        type="text"
+                        placeholder="Tên của bạn"
+                      />
+                      <p class="field__error"></p>
+                    </div>
+                    <div class="field field--fullwidth mb-2 mb-md-5">
+                      <input
+                        class="field__input"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <p class="field__error"></p>
+                    </div>
+                    <div class="field field--fullwidth mb-2 mb-md-5">
+                      <textarea
+                        class="field__textarea"
+                        rows="4"
+                        placeholder="Lời nhắn"
+                      ></textarea>
+                      <p class="field__error"></p>
+                    </div>
+                    <div class="flex-row">
+                      <div class="col-xs-6 col-md-12">
+                        <button
+                          class="btn btn--primary fullwidth"
+                          type="submit"
+                        >
+                          Gửi
+                        </button>
+                      </div>
+                      <div class="col-xs-6 col-md-12">
+                        <div class="d-block d-md-none">
+                          <button
+                            class="btn btn--default fullwidth"
+                            type="reset"
+                            id="book-tour-button-cancel"
+                          >
+                            Huỷ
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <div class="text-center mb-8 mb-md-13">
+            <h2 class="typography-hero mb-3 mb-md-5">Trải nghiệm khách hàng</h2>
+            <p class="typography-subhero text-gray">
+              “Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              <br class="d-md-block d-none" />
+              Aenean commodo ligula eget dolor.”
+            </p>
+          </div>
+          <div class="feedback__list" id="feedback-list">
+            <div class="feedback__item">
+              <p class="typography-body">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Posuere morbi leo urna molestie at elementum eu. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="d-flex flex-wrap align-center mt-md-5 mt-3">
+                <div class="feedback__item-image mr-3 mr-md-5">
+                  <img
+                    src="/assets/images/tour-detail/feedback-image-01.png"
+                    alt="Sallie Lawson"
+                  />
+                </div>
+                <div class="feedback__item-info">
+                  <p class="typography-body text-600">Sallie Lawson</p>
+                  <p class="typography-caption">Founder of Crips</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <p class="typography-body feedback__item-content">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Posuere morbi leo urna molestie at elementum eu. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="d-flex flex-wrap align-center mt-md-5 mt-3">
+                <div class="feedback__item-image mr-3 mr-md-5">
+                  <img
+                    src="/assets/images/tour-detail/feedback-image-02.png"
+                    alt="Sallie Lawson"
+                  />
+                </div>
+                <div class="feedback__item-info">
+                  <p class="typography-body text-600 feedback__item-name">
+                    Tran Anh
+                  </p>
+                  <p class="typography-caption feedback__item-position">
+                    Marketing Agenda
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <p class="typography-body">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Posuere morbi leo urna molestie at elementum eu. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="d-flex flex-wrap align-center mt-md-5 mt-3">
+                <div class="feedback__item-image mr-3 mr-md-5">
+                  <img
+                    src="/assets/images/tour-detail/feedback-image-01.png"
+                    alt="Sallie Lawson"
+                  />
+                </div>
+                <div class="feedback__item-info">
+                  <p class="typography-body text-600">Sallie Lawson</p>
+                  <p class="typography-caption">Founder of Crips</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item">
+              <p class="typography-body feedback__item-content">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Posuere morbi leo urna molestie at elementum eu. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.”
+              </p>
+              <div class="d-flex flex-wrap align-center mt-md-5 mt-3">
+                <div class="feedback__item-image mr-3 mr-md-5">
+                  <img
+                    src="/assets/images/tour-detail/feedback-image-02.png"
+                    alt="Sallie Lawson"
+                  />
+                </div>
+                <div class="feedback__item-info">
+                  <p class="typography-body text-600 feedback__item-name">
+                    Tran Anh
+                  </p>
+                  <p class="typography-caption feedback__item-position">
+                    Marketing Agenda
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="related-tour">
+        <div class="container">
+          <div class="mb-10">
+            <h2 class="typography-h1">Các Tour liên quan</h2>
+          </div>
+          <div class="flex-row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img
+                      src="/assets/images/tour-detail/related-tour-01.png"
+                      alt="NC14"
+                    />
+                  </div>
+                  <h4 class="product__name typography-h3">Tour name</h4>
+                  <p class="product__pricing">0000$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img
+                      src="/assets/images/tour-detail/related-tour-02.png"
+                      alt="NC14"
+                    />
+                  </div>
+                  <h4 class="product__name typography-h3">Tour name</h4>
+                  <p class="product__pricing">0000$/ ngày</p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <a href="/tour-detail.html">
+                <div class="product">
+                  <div class="product__image">
+                    <img
+                      src="/assets/images/tour-detail/related-tour-03.png"
+                      alt="NC14"
+                    />
+                  </div>
+                  <h4 class="product__name typography-h3">Tour name</h4>
+                  <p class="product__pricing">0000$/ ngày</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="mark">
+          <img src="/assets/images/icons/goole-map-mark.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="flex-row">
+            <div class="col-xs-12 col-md-6">
+              <h2 class="typography-hero">Contact us</h2>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <span class="ic ic-place ic-place--primary"></span>
+                  <a href="#" class="typography-body">
+                    123 Nguyen Van Troi, Distric A, HCM city
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <span class="ic ic-letter ic-letter--primary"></span>
+                  <a href="#" class="typography-body">hello@abc.net.vn</a>
+                </li>
+                <li class="contact__item">
+                  <span class="ic ic-phone ic-phone--primary"></span>
+                  <a href="#" class="typography-body">Hỗ trợ dịch vụ</a>
+                </li>
+              </ul>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/facebook.png" alt="" />
+                    <img
+                      src="/assets/images/icons/facebook-active.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/instagram.png" alt="" />
+                    <img
+                      src="/assets/images/icons/instagram-active.png"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-button">
+                    <img src="/assets/images/icons/twitter.png" alt="" />
+                    <img src="/assets/images/icons/twitter-active.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-xs-12 col-md-6 d-md-flex d-block flex-column justify-end align-end"
+            >
+              <a href="#" class="contact__button">
+                <span class="contact__button-icon">
+                  <img src="/assets/images/icons/direction.png" alt="" />
+                </span>
+                Chỉ đường với Google map
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="flex-row">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+              <div class="logo">
+                <a href="/">
+                  <img src="/assets/images/common/logo.png" alt="" />
+                </a>
+              </div>
+
+              <div class="typography-caption">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries,
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-4">
+              <h4 class="footer__top-title typography-h4">Về chúng tôi</h4>
+              <div class="flex-row">
+                <div class="col-xs-6">
+                  <ul class="sitemap">
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Hồ sơ năng lực</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Du Thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Du Thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-6">
+                  <ul class="sitemap">
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tour trong nước</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tour ngoài nước</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Thuê du thuyền</a>
+                    </li>
+                    <li class="sitemap__item typography-body">
+                      <a href="#">Tổ chức sự kiện</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-4">
+              <h4 class="footer__top-title typography-h4">
+                Đăng ký nhận ưu đãi
+              </h4>
+              <form class="subscribe">
+                <input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Nhập email"
+                />
+                <button type="submit" class="btn btn--primary">
+                  <img src="/assets/images/icons/send.png" />
+                </button>
+              </form>
+              <p class="typography-caption">
+                Ưu đãi thường xuyên diễn ra mỗi tháng
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container">
+          <p class="typography-caption">
+            Copyright
+            <span class="special-character">©</span>
+            2020
+            <a href="/" class="brand">La Liberte</a>
+            . All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $('#feedback-list').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        // variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <script src="/assets/js/script.min.js"></script>
+  </body>
+</html>

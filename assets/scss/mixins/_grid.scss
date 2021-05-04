@@ -1,0 +1,8 @@
+@function getColumn($total, $col) {
+  @return ($col / $total) * 100 * 1%;
+}
+
+@mixin useColumn($value) {
+  flex: 0 0 #{$value};
+  max-width: $value;
+}

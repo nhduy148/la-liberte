@@ -1,0 +1,20 @@
+$primary-color: #03ceda;
+$primary-color-light: #48e6f0;
+$primary-color-dark: #002e3a;
+$primary-font: 'Philosopher', sans-serif;
+$second-font: 'Inter', sans-serif;
+$white: #ffffff;
+$light-gray: #b8b8b8;
+$gray: #8A8A8A;
+$bg-dark: #192123;
+
+$cols: 12;
+$spacing: 4;
+
+$breakpoints: (
+  xs: 320px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px,
+) !default;

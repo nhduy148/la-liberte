@@ -1,0 +1,30 @@
+.section-about {
+  padding: 60px 0;
+  @include breakpoint('md') {
+    padding: 100px 0 60px;
+  }
+  &__bg {
+    min-height: 400px;
+  }
+}
+.about-service {
+  padding: 40px 0 80px;
+  @include breakpoint('md') {
+    padding: 60px 0 80px;
+  }
+  &__item {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    @include breakpoint('md') {
+      margin-bottom: 0;
+    }
+    @include breakpoint('sm') {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .typography-body {
+      color: #d4d4d4;
+    }
+  }
+}

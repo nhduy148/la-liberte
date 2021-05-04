@@ -1,0 +1,217 @@
+#page-tour-detail {
+  .content {
+    padding: 50px 0;
+
+    @include breakpoint('md') {
+      padding: 70px 0;
+    }
+
+    &__placement {
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 16px;
+
+      @include breakpoint('md') {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .gallery {
+    &__item {
+      position: relative;
+      margin: 15px 0;
+      height: 220px;
+      overflow: hidden;
+      cursor: pointer;
+      &--main {
+        height: auto;
+        @include breakpoint('md') {
+          height: 470px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+    &__remaining {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      &-tag {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        color: $primary-color-dark;
+        font-weight: 500;
+        font-size: 16px;
+        z-index: 2;
+        @include breakpoint('md') {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .category {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint('md') {
+        flex-direction: row;
+      }
+      &-icon {
+        width: 70px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .dot {
+    min-width: 8px;
+    max-width: 8px;
+    height: 8px;
+    margin-top: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: $primary-color;
+  }
+
+  .date {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #239fa6;
+    color: white;
+    font-size: 13px;
+    @include breakpoint('md') {
+      font-size: 16px;
+      width: 80px;
+      height: 40px;
+    }
+  }
+
+  .feedback {
+    padding: 60px 0;
+    background-color: $primary-color-dark;
+    @include breakpoint('md') {
+      padding: 80px 0;
+    }
+    &__list {
+      position: relative;
+      .slick {
+        &-arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 0;
+          border: none;
+          outline: none;
+          width: 19px;
+          height: 19px;
+        }
+        &-prev {
+          left: 0;
+          background: url(/assets/images/icons/arrow-left.png) center/cover
+            no-repeat;
+        }
+        &-next {
+          right: 0;
+          background: url(/assets/images/icons/arrow-right.png) center/cover
+            no-repeat;
+        }
+        &-list {
+          width: calc(100% - 50px);
+          max-width: 1030px;
+          margin: 0 auto;
+          overflow: hidden;
+          padding: 0 !important;
+          @include breakpoint('md') {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__item {
+      max-width: 100%;
+      margin: 0 10px;
+      @include breakpoint('md') {
+        max-width: 490px;
+        margin: 0 25px;
+      }
+      &-content {
+        color: #d4d4d4;
+      }
+      &-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include breakpoint('md') {
+          width: 70px;
+          height: 70px;
+        }
+      }
+      &-name {
+      }
+      &-position {
+        color: #bcbcbc;
+      }
+    }
+  }
+
+  .related-tour {
+    padding: 60px 0;
+    @include breakpoint('md') {
+      padding: 80px 0;
+    }
+    .product {
+      margin-bottom: 40px;
+      @include breakpoint('md') {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #book-tour-form {
+    @include breakpoint('md') {
+      display: block !important;
+    }
+    @include breakpoint-down('md') {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      z-index: 1;
+    }
+  }
+}
